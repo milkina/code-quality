@@ -1,4 +1,4 @@
-package com.softserve.code.quality;
+package com.softserve.training.code.quality;
 
 public class TrafficLight {
     public static void main(String[] args) {

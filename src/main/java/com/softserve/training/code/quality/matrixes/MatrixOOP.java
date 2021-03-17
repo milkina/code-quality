@@ -1,7 +1,10 @@
-package com.softserve.code.quality.matrixes;
+package com.softserve.training.code.quality.matrixes;
+
+import lombok.Data;
 
 import java.util.Arrays;
 
+@Data
 public class MatrixOOP {
     private int[][] array;
     private int rows;
@@ -11,30 +14,6 @@ public class MatrixOOP {
         this.array = array;
         this.rows = array.length;
         this.columns = array[0].length;
-    }
-
-    public int[][] getArray() {
-        return array;
-    }
-
-    public void setArray(int[][] array) {
-        this.array = array;
-    }
-
-    public int getRows() {
-        return rows;
-    }
-
-    public void setRows(int rows) {
-        this.rows = rows;
-    }
-
-    public int getColumns() {
-        return columns;
-    }
-
-    public void setColumns(int columns) {
-        this.columns = columns;
     }
 
     /**

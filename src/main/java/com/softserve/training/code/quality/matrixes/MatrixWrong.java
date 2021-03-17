@@ -1,4 +1,4 @@
-package com.softserve.code.quality.matrixes;
+package com.softserve.training.code.quality.matrixes;
 
 import java.util.Arrays;
 

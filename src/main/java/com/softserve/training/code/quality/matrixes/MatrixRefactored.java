@@ -1,4 +1,4 @@
-package com.softserve.code.quality.matrixes;
+package com.softserve.training.code.quality.matrixes;
 
 import java.util.Arrays;
 
@@ -8,12 +8,12 @@ public class MatrixRefactored {
         int[][] matrix2 = {{2, 2, 2}, {2, 2, 2}};
         int coefficient = 10;
 
-        multiply(matrix2, coefficient);
-        getSum(matrix1, matrix2);
-        getDifference(matrix1, matrix2);
+        int[][] matrixMultiplication = multiply(matrix2, coefficient);
+        int[][] matrixSum = getSum(matrix1, matrix2);
+        int[][] matrixDifference = getDifference(matrix1, matrix2);
     }
 
-    private static void getDifference(int[][] matrix1, int[][] matrix2) {
+    private static int[][] getDifference(int[][] matrix1, int[][] matrix2) {
         int[][] difference = new int[matrix1.length][matrix1[0].length];
         for (int i = 0; i < matrix1.length; i++) {
             for (int j = 0; j < matrix1[0].length; j++) {
@@ -21,9 +21,10 @@ public class MatrixRefactored {
             }
         }
         System.out.println(Arrays.deepToString(difference));
+        return difference;
     }
 
-    private static void getSum(int[][] matrix1, int[][] matrix2) {
+    private static int[][] getSum(int[][] matrix1, int[][] matrix2) {
         int[][] sum = new int[matrix1.length][matrix1[0].length];
         for (int i = 0; i < matrix1.length; i++) {
             for (int j = 0; j < matrix1[0].length; j++) {
@@ -31,9 +32,10 @@ public class MatrixRefactored {
             }
         }
         System.out.println(Arrays.deepToString(sum));
+        return sum;
     }
 
-    private static void multiply(int[][] matrix, int coefficient) {
+    private static int[][] multiply(int[][] matrix, int coefficient) {
         int[][] result = new int[matrix.length][matrix[0].length];
         for (int i = 0; i < matrix.length; ++i) {
             for (int j = 0; j < matrix[0].length; ++j) {
@@ -41,5 +43,6 @@ public class MatrixRefactored {
             }
         }
         System.out.println(Arrays.deepToString(result));
+        return result;
     }
 }

@@ -1,4 +1,4 @@
-package com.softserve.code.quality.exceptions;
+package com.softserve.training.code.quality.exceptions;
 
 public class AccountDanger{
     public static void main(String[] args) {

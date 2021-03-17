@@ -1,4 +1,4 @@
-package com.softserve.code.quality.figures;
+package com.softserve.training.code.quality.figures;
 
 public class FindAreas {
     public static void main(String[] args) {

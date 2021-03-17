@@ -1,4 +1,4 @@
-package com.softserve.code.quality.exceptions;
+package com.softserve.training.code.quality.exceptions;
 
 public class Account implements Runnable {
     private int balance = 50;
